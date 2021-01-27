@@ -1,0 +1,7 @@
+README.md
+setup.py
+gluejob1/gluejob1.egg-info/PKG-INFO
+gluejob1/gluejob1.egg-info/SOURCES.txt
+gluejob1/gluejob1.egg-info/dependency_links.txt
+gluejob1/gluejob1.egg-info/requires.txt
+gluejob1/gluejob1.egg-info/top_level.txt

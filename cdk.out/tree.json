@@ -1,0 +1,159 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "As3bucket": {
+        "id": "As3bucket",
+        "path": "As3bucket",
+        "children": {
+          "nikhil420": {
+            "id": "nikhil420",
+            "path": "As3bucket/nikhil420",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "As3bucket/nikhil420/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketName": "mybucketnikhil420demo",
+                    "websiteConfiguration": {
+                      "indexDocument": "index.html"
+                    }
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "As3bucket/nikhil420/Notifications"
+              },
+              "Policy": {
+                "id": "Policy",
+                "path": "As3bucket/nikhil420/Policy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "As3bucket/nikhil420/Policy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::BucketPolicy",
+                      "aws:cdk:cloudformation:props": {
+                        "bucket": {
+                          "Ref": "nikhil420099E45B5"
+                        },
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "s3:GetObject",
+                              "Effect": "Allow",
+                              "Principal": "*",
+                              "Resource": {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "nikhil420099E45B5",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "/*"
+                                  ]
+                                ]
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "As3bucket/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "As3bucket/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "As3bucket/CDKMetadata/Condition"
+              }
+            }
+          }
+        }
+      },
+      "Bgluedatabase": {
+        "id": "Bgluedatabase",
+        "path": "Bgluedatabase",
+        "children": {
+          "nikhildb": {
+            "id": "nikhildb",
+            "path": "Bgluedatabase/nikhildb",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "Bgluedatabase/nikhildb/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Glue::Database",
+                  "aws:cdk:cloudformation:props": {
+                    "catalogId": {
+                      "Ref": "AWS::AccountId"
+                    },
+                    "databaseInput": {
+                      "name": "nike"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "Bgluedatabase/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "Bgluedatabase/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "Bgluedatabase/CDKMetadata/Condition"
+              }
+            }
+          }
+        }
+      },
+      "Egluejob1": {
+        "id": "Egluejob1",
+        "path": "Egluejob1",
+        "children": {
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "Egluejob1/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "Egluejob1/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "Egluejob1/CDKMetadata/Condition"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

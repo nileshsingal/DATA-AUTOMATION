@@ -1,0 +1,201 @@
+{
+  "version": "8.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "As3bucket": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "As3bucket.template.json"
+      },
+      "metadata": {
+        "/As3bucket/nikhil420/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nikhil420099E45B5",
+            "trace": [
+              "new Bucket (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:504:26)",
+              "C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3589:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:4073:16)",
+              "Kernel._create (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3589:26)",
+              "Kernel.create (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3324:21)",
+              "KernelHost.processRequest (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13191:28)",
+              "KernelHost.run (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13129:14)",
+              "Immediate._onImmediate (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13132:37)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/As3bucket/nikhil420/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nikhil420Policy6D8F6DA9",
+            "trace": [
+              "new BucketPolicy (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket-policy.js:30:25)",
+              "Bucket.addToResourcePolicy (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:131:27)",
+              "Function.addToPrincipalOrResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:68:49)",
+              "Bucket.grantPublicAccess (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:334:26)",
+              "new Bucket (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:551:18)",
+              "C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3589:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:4073:16)",
+              "Kernel._create (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3589:26)",
+              "Kernel.create (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3324:21)",
+              "KernelHost.processRequest (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13191:28)",
+              "KernelHost.run (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13129:14)",
+              "Immediate._onImmediate (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13132:37)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/As3bucket/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:127:9",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:181:9)",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:178:9)",
+              "injectMetadataResources (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:116:5)",
+              "Object.synthesize (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:16:5)",
+              "App.synth (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\stage.js:98:41)",
+              "process.<anonymous> (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\app.js:58:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ],
+        "/As3bucket/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:127:9",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:181:9)",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:178:9)",
+              "injectMetadataResources (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:116:5)",
+              "Object.synthesize (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:16:5)",
+              "App.synth (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\stage.js:98:41)",
+              "process.<anonymous> (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\app.js:58:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ]
+      }
+    },
+    "Bgluedatabase": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Bgluedatabase.template.json"
+      },
+      "metadata": {
+        "/Bgluedatabase/nikhildb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "nikhildb9F3731AD",
+            "trace": [
+              "new Database (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\aws-glue\\lib\\database.js:31:26)",
+              "C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3589:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:4073:16)",
+              "Kernel._create (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3589:26)",
+              "Kernel.create (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:3324:21)",
+              "KernelHost.processRequest (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13191:28)",
+              "KernelHost.run (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13129:14)",
+              "Immediate._onImmediate (C:\\Users\\Nikhil Ramgiri\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:13132:37)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/Bgluedatabase/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:127:9",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:181:9)",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:178:9)",
+              "injectMetadataResources (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:116:5)",
+              "Object.synthesize (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:16:5)",
+              "App.synth (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\stage.js:98:41)",
+              "process.<anonymous> (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\app.js:58:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ],
+        "/Bgluedatabase/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:127:9",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:181:9)",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:178:9)",
+              "injectMetadataResources (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:116:5)",
+              "Object.synthesize (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:16:5)",
+              "App.synth (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\stage.js:98:41)",
+              "process.<anonymous> (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\app.js:58:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ]
+      }
+    },
+    "Egluejob1": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Egluejob1.template.json"
+      },
+      "metadata": {
+        "/Egluejob1/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:127:9",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:181:9)",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:178:9)",
+              "injectMetadataResources (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:116:5)",
+              "Object.synthesize (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:16:5)",
+              "App.synth (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\stage.js:98:41)",
+              "process.<anonymous> (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\app.js:58:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ],
+        "/Egluejob1/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:127:9",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:181:9)",
+              "visit (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:178:9)",
+              "injectMetadataResources (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:116:5)",
+              "Object.synthesize (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:16:5)",
+              "App.synth (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\stage.js:98:41)",
+              "process.<anonymous> (C:\\Users\\NIKHIL~1\\AppData\\Local\\Temp\\jsii-kernel-OQShiB\\node_modules\\@aws-cdk\\core\\lib\\app.js:58:51)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
